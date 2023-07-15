@@ -1,0 +1,830 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 98vh;
+  background-color: #F9F6EE;
+
+}
+
+@font-face {
+  font-family: 'Abril';
+  src: url('../public/AbrilFatface-Regular.ttf');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Navbar {
+  display: flex;
+  height: 5vmin;
+  display: flex;
+  margin: auto;
+  width: 90vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlogo {
+  margin-top: -1.5vh;
+  margin-left: 2vw;
+  width: 15vw;
+  height: 18vh;
+  background-color: #F9F6EE;
+}
+
+.navlogo img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.welcomepage {
+  background-color: #F9F6EE;
+  height: 100vmin;
+}
+
+.ent {
+  margin: auto;
+  height: 5vmin;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vmin;
+  user-select: none;
+}
+
+
+.homeheader {
+  display: flex;
+  margin-top: 2vh;
+  height: 12vmin;
+  background-color: rgba(0, 0, 0, 1);
+
+
+}
+
+.homebody {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+
+}
+
+.feedchoise {
+  height: 6vh;
+  display: flex;
+}
+
+
+.feedButton {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2vmin;
+}
+
+.feedButton:first-child {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid white;
+}
+
+.feedButton:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.feedButton:hover {
+  border: 0.2vmin solid black;
+  background-color: white;
+  color: black;
+}
+
+
+.content {
+  overflow: auto;
+  height: 80vh;
+  width: 70vw;
+}
+
+.content::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+.sidebar {
+  width: 20vw;
+  margin-left: 3vmin;
+  border: 0.25vmin solid black;
+  border-radius: 4px 4px;
+  height: 75vh;
+  overflow: auto;
+
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+.umaykn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 2.5vmin;
+  color: rgb(0, 0, 0);
+  height: 5.6vh;
+}
+
+.top {
+  height: 18vh;
+}
+
+.quizpreview {
+  height: 17vh;
+  margin-left: 5vmin;
+  position: relative;
+}
+
+
+.quizpreview::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.2vmin;
+  height: 0.25vh;
+  width: 0;
+  background-color: #000000;
+  transition: width 0.75s;
+}
+
+.quizpreview:hover::after {
+  width: 100%;
+}
+
+.quizpreview h3 {
+  font-size: 3vmin;
+  color: #000000;
+}
+
+.quizpreview h4 {
+  font-size: 2.25vmin;
+  color: #000000;
+}
+
+.quizpreview p {
+  font-size: 2.25vmin;
+  color: #020202;
+}
+
+
+
+.profilepreview {
+  margin: 0.5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  position: relative;
+  background-color: white;
+  border: 0.2vmin solid black;
+  border-radius: 2px;
+  color: black;
+  text-decoration: none;
+  font-size: 3vmin;
+}
+
+.profilepreview:hover {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+#prof {
+  width: 7.5vw;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2vmin;
+}
+
+#log {
+  width: 7.5vw;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2vmin;
+}
+
+#create {
+  width: 7.5vw;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2vmin;
+}
+
+#homebutton{
+  width: 7.5vw;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2vmin;
+}
+
+#prof:hover {
+  background-color: white;
+  color: black;
+}
+
+#log:hover {
+  background-color: white;
+  color: black;
+}
+
+#create:hover {
+  background-color: white;
+  color: black;
+}
+
+#homebutton:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbuttons {
+  margin-left: 45vw;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 55vw;
+}
+
+.search-container input {
+  height: 4vh;
+  width: 12.5vw;
+}
+
+.search-container .search-button {
+  background-color: black;
+  margin-left: 2vw;
+  padding: 10px;
+  width: 1.5vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+.profileviewer {
+  width: 90vw;
+  margin: auto;
+  height: 30vh;
+  border: 0.4vmin solid black;
+  border-radius: 0.25vw;
+  display: flex;
+}
+
+.profileviewer h2 {
+  font-size: 3.5vmin;
+}
+
+#userimg {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5vw;
+}
+
+.profileinfo {
+  margin: auto;
+}
+
+#historybutton {
+  height: 5vh;
+  width: 10vw;
+  background-color: black;
+  color: white;
+  font-size: 2.5vmin;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#historybutton:hover {
+  background-color: white;
+  color: black;
+  border: 0.24vmin solid black;
+}
+
+.quizlist {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
+  height: 40vh;
+  border: 0.4vmin solid black;
+  border-radius: 0.25vw;
+  overflow: auto;
+}
+
+.quizlist h2{
+  text-align: center;
+}
+
+.quizlist::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.quizlist::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.quizlist::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.quizlist::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+.History {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75vh;
+  
+  overflow: auto;
+}
+
+.History h1 {
+  font-size: 5vmin;
+  text-align: center;
+}
+
+.History h2{
+  text-align: center;
+}
+
+.History::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.History::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.History::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.History::-webkit-scrollbar-thumb:hover {
+  background-color:  grey;
+}
+
+.eachquiz {
+  border-top: 0.1vmin solid black;
+  border-bottom: 0.1vmin solid black;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vmin;
+}
+
+.eachquiz h2{
+ text-align: center;
+}
+
+.eachquiz h3{
+  text-align: center;
+ }
+
+
+ .actuallycreate{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  border: 0.2vmin solid black;
+  font-size: 2vmin;
+ }
+
+ .actuallycreate::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.actuallycreate::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.actuallycreate::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.actuallycreate::-webkit-scrollbar-thumb:hover {
+  background-color:  grey;
+}
+
+
+ .actuallycreate h1{
+  font-size: 4vmin;
+ }
+
+ .quizdeets{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .quizname{
+  font-size: 2.5vmin;
+  margin-bottom: 4vh;
+ }
+ .quizdesc{
+  font-size: 2.5vmin;
+  margin-bottom: 4vh;
+  margin-left: 5vw;
+ }
+
+ .quizname input,
+.quizdesc input {
+  font-size: 2vmin;
+  height: 3vh;
+  margin-top: 1vh;
+  display: block; 
+}
+
+.quizdesc input{
+  width: 20vw;
+}
+
+ .actuallycreate h1{
+  text-align: center;
+ }
+
+ .actualquest{
+  width: 70vw;
+  height: 25vh;
+  text-align: center;
+  border: 0.1vmin solid black;
+  margin-bottom: 1vh;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .actualquest input{
+  margin-left: auto;
+  margin-right: auto;
+  height: 2vmin;
+ }
+
+ #addquestion{
+  width: 35vw;
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  font-size: 2.5vmin;
+  cursor: pointer;
+  outline: none;
+  border: 0.1vmin solid black;
+  margin-bottom: 1vh;
+ }
+
+ #submitquestion{
+  width:35vw;
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  font-size: 2.5vmin;
+  cursor: pointer;
+  outline: none;
+  border: 0.1vmin solid black;
+  margin-bottom: 1vh;
+ }
+
+ #addquestion:hover{
+  background-color: black;
+  color:#F9F6EE;
+ }
+
+ #submitquestion:hover{
+  background-color: black;
+  color:#F9F6EE;
+ }
+
+ .ent button{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  height: 4vh;
+  font-size: 2.5vmin;
+  transition: 0.5s;
+  width: 20vw;
+}
+
+.ent button:hover{
+  color: black;
+  background-color: white;
+  border: 0.2vmin solid black;
+}
+
+.signupdialogue {
+  position: relative;
+  border: 0.2vmin solid black;
+  height: 12vmin;
+  width: 19.9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2vmin;
+}
+
+.logindialogue{
+  position: relative;
+  display: flex;
+  border: 0.2vmin solid black;
+  height: 12vmin;
+  width: 19.9vw;
+  font-size: 2vmin;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logindialogue input{
+  font-size: 2vmin;
+}
+
+.signupdialogue input{
+  font-size: 2vmin;
+}
+
+.logindialogue p{
+  font-size: 2vmin;
+  margin-top: 10vmin;
+}
+
+.signupdialogue p{
+  font-size: 2vmin;
+  margin-top: 10vmin;
+}
+
+
+#login{
+  position: absolute;
+  bottom: 0vmin;
+  left: -0.05vmin;
+}
+
+#sub{
+  position: absolute;
+  bottom: 0vmin;
+  left: -0.05vmin;
+}
+
+.notfoundpage{
+  height: 75vh;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.notfoundpage h1{
+  font-family:'Abril';
+  font-size: 15vmin;
+}
+
+.notfoundpage h2{
+  font-size: 5vmin;
+}
+
+.quizpage{
+  border: 0.2vmin solid black;
+  width: 90vw;
+  height: 75vh;
+  margin: auto;
+  overflow: auto;
+}
+
+.quizpage h2{
+  text-align: center;
+}
+
+.quizpage::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.quizpage::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.quizpage::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.quizpage::-webkit-scrollbar-thumb:hover {
+  background-color:  grey;
+}
+
+.quiz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.quiz h2{
+  font-size: 4vmin;
+  text-align: center;
+  font-family:'Abril';
+}
+
+.quiz h3{
+  font-size: 3vmin;
+}
+
+.takingQuiz{
+  width: 70vw;
+ margin-bottom: 0.5vh;
+  border: 0.1vmin solid black;
+}
+
+.takingQuiz h2{
+  font-size: 2.5vmin;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+.radios input[type="radio"] {
+ display: none;
+}
+.radios label{
+  display: block;
+  width: 100%;
+  width: 60vw;
+
+  margin-bottom: 0.2vmin;
+}
+
+.radios label:hover{
+  background-color: black;
+  color: white;
+}
+
+.radios input[type="radio"]:checked+label {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#submitquiz{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 2.5vmin;
+  width: 60vw;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+#submitquiz:hover{
+  background-color: white;
+  color: black;
+  border: 0.1vmin solid black;
+}
+
+.historyofquiz{
+  text-align: center;
+  overflow: auto;
+}
+
+.historyofquiz::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.historyofquiz::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.historyofquiz::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.historyofquiz::-webkit-scrollbar-thumb:hover {
+  background-color:  grey;
+}
+
+.historyofquiz h2{
+  font-size: 5vmin;
+}
+.historyofquiz h4{
+  font-size: 3vmin;
+}
+.historyofquiz h3{
+  font-size: 4vmin;
+}
+.takenby{
+  font-size: 2vmin;
+}
+
+* {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth; 
+  -ms-scroll-behavior: smooth; 
+}
+
+.profilepage{
+  text-align: center;
+}
+
+.searchresults{
+  width: 90vw;
+  height: 75vh;
+  margin: auto;
+  overflow: auto;
+}
+
+.searchresults h1{
+  text-align: center;
+  font-size: 5vmin;
+}
+
+.searchresults::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.searchresults::-webkit-scrollbar-track {
+  background-color: #F9F6EE;
+}
+
+.searchresults::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.searchresults::-webkit-scrollbar-thumb:hover {
+  background-color:  grey;
+}
