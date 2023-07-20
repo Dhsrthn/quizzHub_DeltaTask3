@@ -12,5 +12,5 @@ Home feed can be sorted based on popularity and on how recent the quizzes are
 
 Install neceassary packages in both the client and server directories to run
 
-npm run start - client
+npm run start - client---
 npm run dev - server
