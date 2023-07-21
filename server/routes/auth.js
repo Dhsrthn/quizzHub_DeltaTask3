@@ -41,7 +41,7 @@ router.post('/register', async (req,res)=>{
             const noquiz=0
             const quizlist=[]
             await Profile.create({username,id:uniqueID,noquiz,quizlist})
-        }).then(res.send('user created'))
+        }).then(res.send('user profile created'))
         
     }
 })
