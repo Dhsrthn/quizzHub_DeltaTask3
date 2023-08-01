@@ -76,12 +76,12 @@ const Welcome = () => {
                                 <label>UserName</label>
                                 <input type="text" onChange={(event) => {
                                     setregUsername(event.target.value)
-                                }} style={{height:'2vmin'}}></input>
+                                }} style={{height:'2vmin'}} required></input>
                                 <br /> 
                                 <label>Password   </label>
                                 <input type="password" onChange={(event) => {
                                     setpassword(event.target.value)
-                                }} style={{height:'2vmin'}}></input>
+                                }} style={{height:'2vmin'}} required></input>
                                 <br />
                                 <button id="sub">submit</button>
                                 
@@ -111,12 +111,12 @@ const Welcome = () => {
                             <label>UserName</label>
                             <input type="text" onChange={(event) => {
                                     setlogUsername(event.target.value)
-                                }} style={{height:'2vmin'}}></input>
+                                }} style={{height:'2vmin'}} required></input>
                             <br />
                             <label>Password   </label>
                             <input type="password" onChange={(event) => {
                                     setlogPassword(event.target.value)
-                                }} style={{height:'2vmin'}}></input>
+                                }} style={{height:'2vmin'}} required></input>
                             <br />
                             <button id="login">submit</button>
                             {!userFound && <p>User not found, try again</p>}
