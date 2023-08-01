@@ -100,6 +100,7 @@ const CreateQuizForm = () => {
                                 value={question.question}
                                 onChange={(event) => handleQuestionChange(questionIndex, event)}
                                 style={{ width: '69vw' }}
+                                required
                             />
                             {question.options.map((option, optionIndex) => (
                                 <div key={optionIndex}>
@@ -108,6 +109,7 @@ const CreateQuizForm = () => {
                                         type="text"
                                         value={option}
                                         onChange={(event) => handleOptionChange(questionIndex, optionIndex, event)}
+                                        required
                                     />
                                 </div>
                             ))}
@@ -116,6 +118,7 @@ const CreateQuizForm = () => {
                                 type="text"
                                 value={question.correctOption}
                                 onChange={(event) => handleCorrectOptionChange(questionIndex, event)} style={{ width: '12vw' }}
+                                required
                             />
                         </div>
                     ))}
